@@ -1,0 +1,124 @@
+<link rel="stylesheet" href="nuestros-productos.css">
+<div id="productosyofertas">
+
+  <div id="ofertas">
+
+    <div id="Carrusel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#Carrusel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#Carrusel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#Carrusel" data-bs-slide-to="2"></button>
+      </div>
+
+      <img src="../../../public/images/flechaF.png" height="16" width="26"/><img src="../../../public/images/flechaF.png" height="16" width="26"/>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/of1.png" class="d-block w-100" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/of2.png" class="d-block w-100" alt="Imagen 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/of3.png" class="d-block w-100" alt="Imagen 3">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#Carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#Carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div id="productos">
+    <div id="listaproductos">
+      <div id="busqueda">
+        <div>
+          <h2>Ordenar por:</h2>
+        </div>
+
+        <div id="Precio">
+          <div>
+            <button id="precio"><span>Precio</span> <img src="images/flechaF.png"></button>
+          </div>
+          <div id="PrecioV">
+            <div>
+              <label>Mínimo:</label>
+              <input type="number" min="1" max="999">
+            </div>
+            <div>
+              <label>Máximo:</label>
+              <input type="number" min="1" max="999">
+            </div>
+          </div>
+        </div>
+
+        <div id="Relevancia">
+          <div>
+            <button id="relevancia"><span>{{ Rel }}</span> <img src="images/flechaF.png"></button>
+          </div>
+          <div id="RelevanciaV">
+              <div>
+                <button id="masRel" (click)="masRel()">Más relevante</button>
+              </div>
+              <div>
+                <button id="menosRel" (click)="menosRel()">Menos Relevante</button>
+              </div>
+          </div>
+        </div>
+
+        <div id="Filtrar">
+          <div>
+            <button id="filtrar"><span>Filtrar</span> <img src="images/flechaF.png"></button>
+          </div>
+          <div id="FiltrarV">
+            <div>
+              <input type="checkbox" name="Aventura">
+              <label>Aventura</label>
+            </div>
+            <div>
+              <input type="checkbox" name="Medieval">
+              <label>Medieval</label>
+            </div>
+            <div>
+              <input type="checkbox" name="Misterio">
+              <label>Misterio</label>
+            </div>
+            <div>
+              <input type="checkbox" name="Competitivo">
+              <label>Competitivo</label>
+            </div>
+            <div>
+              <input type="checkbox" name="Criminal">
+              <label>Criminal</label>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="Buscar">
+          <div id="barraBuscar">
+            <div>
+              <input type="text" name="Buscar" id="buscar">
+            </div>
+            <div>
+              <button id="buscarResultados" (click)="buscarProductos()"><img src="images/lupa.png"></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
